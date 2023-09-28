@@ -1,0 +1,17 @@
+airflow:
+  dags_image:
+    repository: localhost:5001/case_pipeline
+    tag: 1.0.0
+    pull_policy: Always
+  webserver:
+    username: admin
+    password: "12345678"
+    secret_key: topsecret
+  configs:
+    fernet_key: 9jgWYeShQAYRS5E4Gu_n9GoGAuml4n50IpS-jifVqdA=
+
+mysql:
+  host: mysql
+  username: airflow
+  database: airflow
+  password: "12345678"
