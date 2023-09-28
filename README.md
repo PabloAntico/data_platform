@@ -29,3 +29,5 @@ Helm: https://helm.sh/docs/intro/install/
 7. Faça a tag da imagem com o host de registro do docker local `docker tag airflow_task:1.0.0 localhost:5001/airflow_task:1.0.0`
 8. Envie a imagem do Airflow para o registro do docker local `docker push localhost:5001/airflow_task:1.0.0`
 9. Aplique o Helm `helm upgrade --install airflow . --values values.yaml`
+
+OBS: Todos os passos acima, podem ser executados pelo arquivo `build.sh` caso queira que o ambiente rapidamente.
